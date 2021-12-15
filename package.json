@@ -1,6 +1,6 @@
 {
   "name": "@circusdao/juggler-token-list",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The Juggler default token list",
   "main": "build/juggler-default.tokenlist.json",
   "scripts": {
