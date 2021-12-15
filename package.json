@@ -1,0 +1,45 @@
+{
+  "name": "@circusdao/juggler-token-list",
+  "version": "1.0.0",
+  "description": "The Juggler default token list",
+  "main": "build/juggler-default.tokenlist.json",
+  "scripts": {
+    "test": "mocha",
+    "build": "rimraf build && mkdir build && node internal/write.js > build/juggler-default.tokenlist.json",
+    "prepublishOnly": "npm test && npm run build",
+    "sync": "node internal/sync.js"
+  },
+  "files": [
+    "build/juggler-default.tokenlist.json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CircusDAO/juggler-token-list.git"
+  },
+  "keywords": [
+    "Optimism",
+    "CircusDAO",
+    "Juggler",
+    "Tokens"
+  ],
+  "author": "BarnabyBob",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/CircusDAO/juggler-token-list/issues"
+  },
+  "homepage": "https://github.com/CircusDAO/juggler-token-list#readme",
+  "devDependencies": {
+    "@circusdao/juggler-sdk": "^1.0.5",
+    "@ethersproject/address": "^5.0.2",
+    "@ethersproject/solidity": "^5.3.0",
+    "@octokit/rest": "^18.6.2",
+    "@sushiswap/sdk": "^5.0.0-canary.22",
+    "@uniswap/token-lists": "1.0.0-beta.25",
+    "ajv": "^6.12.3",
+    "chai": "^4.2.0",
+    "lodash": "^4.17.21",
+    "mocha": "^8.0.1",
+    "rimraf": "^3.0.2",
+    "xlsx": "^0.17.0"
+  }
+}
